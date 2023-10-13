@@ -5,7 +5,7 @@ default :
     get_source : "git"
     git_info:
     {
-        repo : "https://codev-tuleap.cea.fr/plugins/git/salome/" + $name + ".git"
+        repo : $PROJECTS.projects.salome.git_info.default_git_server + "tools/" + $name + ".git"
         repo_dev : $repo
     }
     environ :

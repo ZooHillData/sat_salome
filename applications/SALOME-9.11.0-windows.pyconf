@@ -178,7 +178,7 @@ APPLICATION :
         'ADAO'
         'PARAVISADDONS'
         'PY2CPP'
-        'OPENTURNS_SALOME'
+        # 'OPENTURNS_SALOME'
         'YDEFX'
         'pmml'
         #'TESTBASE'
@@ -196,7 +196,7 @@ APPLICATION :
     properties :
     {
         mesa_launcher_in_package : "no"
-        repo_dev : "yes"
+        repo_dev : "no"
         pip : 'yes'
         pip_install_dir : 'python'
         single_install_dir : "yes"
