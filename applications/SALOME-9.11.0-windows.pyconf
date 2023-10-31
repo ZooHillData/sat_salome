@@ -144,8 +144,8 @@ APPLICATION :
         'CONFIGURATION'
         'SALOME'
         'SHAPER'
-        'SHAPERSTUDY'
-        'RESTRICTED'
+        'SHAPERSTUDY': {tag: 'master'}
+        # 'RESTRICTED'
         'LIBBATCH' : {tag :'V2_4_6'}
         'KERNEL'
         'MEDCOUPLING'
@@ -176,13 +176,13 @@ APPLICATION :
         'EFICAS'
         'EFICAS_TOOLS'
         'ADAO'
-        'PARAVISADDONS'
+        'PARAVISADDONS': {tag: 'master'}
         'PY2CPP'
         # 'OPENTURNS_SALOME'
         'YDEFX'
-        'pmml'
+        # 'pmml'
         #'TESTBASE'
-        'CEATESTBASE' : 'SalomeV9'
+        # 'CEATESTBASE' : 'SalomeV9'
     }
     profile :
     {
