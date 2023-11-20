@@ -131,7 +131,12 @@ rem 7-zip in user environment
 SET PATH=%SOFTWARE_ROOT_DIR%\7-Zip;%PATH%
 
 rem MS Visual environment in user environment
-call "C:\Program Files (x86)\Microsoft Visual Studio\%VISUAL_STUDIO_VERSION%\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" %VISUAL_STUDIO_ARCHITECTURE%
+rem ART: Updated this for professional version of visual studio
+call "C:\Program Files (x86)\Microsoft Visual Studio\%VISUAL_STUDIO_VERSION%\Professional\VC\Auxiliary\Build\vcvarsall.bat" %VISUAL_STUDIO_ARCHITECTURE%
+
+rem ART: add devenv to path
+SET DEV_ENV_PATH="C:\Program Files (x86)\Microsoft Visual Studio\%VISUAL_STUDIO_VERSION%\Professional\Common7\IDE"
+SET PATH=%DEV_ENV_PATH%;%PATH%
 
 ECHO Environment successfully set.. You should be able to use SAT now...
 GOTO :EOF
